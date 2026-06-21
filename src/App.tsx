@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import { ApiKeySettings } from './components/ApiKeySettings';
 import { GoonvLogo } from './components/GoonvLogo';
 import { useGoonvAssistant } from './hooks/useGoonvAssistant';
+import { IS_STATIC_DEPLOY } from './lib/config';
 import {
   GOONV_INTRO,
   isValidFaceTimeLink,
@@ -143,9 +145,12 @@ export default function App() {
             </button>
 
             <p className="hint">
-              On Mac, Goonv joins via FaceTime automatically. Elsewhere, it joins through
-              Chrome as participant &ldquo;Goonv&rdquo; — admit them when prompted.
+              {IS_STATIC_DEPLOY
+                ? 'Use Chrome on desktop with speaker mode so everyone hears Goonv. Add an OpenAI key below for smarter answers.'
+                : 'On Mac, Goonv joins via FaceTime automatically. Elsewhere, it joins through Chrome as participant "Goonv" — admit them when prompted.'}
             </p>
+
+            <ApiKeySettings />
           </section>
         ) : (
           <section className="card card--live">

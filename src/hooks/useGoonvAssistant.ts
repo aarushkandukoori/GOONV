@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { containsWakePhrase, extractQueryAfterWake } from '../lib/facetime';
+import { chatWithGoonv, type ChatMessage } from '../lib/chat';
 
 type SpeechRecognitionType = typeof window.SpeechRecognition;
 
@@ -11,11 +12,6 @@ export type AssistantStatus =
   | 'processing'
   | 'speaking'
   | 'error';
-
-interface ChatMessage {
-  role: 'user' | 'assistant';
-  content: string;
-}
 
 interface UseGoonvAssistantOptions {
   onStatusChange?: (status: AssistantStatus) => void;
@@ -89,14 +85,7 @@ export function useGoonvAssistant(options: UseGoonvAssistantOptions = {}) {
       setTranscript(question);
 
       try {
-        const res = await fetch('/api/chat', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ message: question, history }),
-        });
-
-        const data = await res.json();
-        const reply = data.reply || data.error || "AHHH I got nothin', try again!";
+        const { reply } = await chatWithGoonv(question, history);
 
         setLastResponse(reply);
         setHistory((prev) => [

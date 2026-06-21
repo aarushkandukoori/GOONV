@@ -263,6 +263,55 @@ body {
   background: rgba(255, 59, 92, 0.08);
 }
 
+.btn--secondary {
+  background: var(--bg-elevated);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.btn--secondary:hover {
+  border-color: var(--accent);
+}
+
+.settings {
+  margin-top: 24px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.settings-toggle {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font);
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.settings-toggle:hover {
+  color: var(--accent-bright);
+}
+
+.settings-panel {
+  margin-top: 8px;
+  padding: 16px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.settings-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
 .btn-icon {
   font-size: 0.75rem;
 }
