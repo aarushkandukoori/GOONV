@@ -108,11 +108,7 @@ export default function App() {
             <h2 className="card-title">Summon Goonv to your call</h2>
             <p className="card-desc">
               Paste a FaceTime link below. Goonv auto-joins the call as a real
-              participant (like{' '}
-              <a href="https://www.koovai.com/" target="_blank" rel="noopener noreferrer">
-                Koov
-              </a>
-              ) and answers whenever someone says{' '}
+              participant and answers whenever someone says{' '}
               <strong>&ldquo;Hey Gooner&rdquo;</strong>.
             </p>
 
@@ -231,7 +227,10 @@ export default function App() {
           <div className="feature">
             <span className="feature-num">03</span>
             <h3>Wake word</h3>
-            <p>Say &ldquo;Hey Gooner&rdquo; anytime and Goonv answers your question.</p>
+            <p>
+              Say &ldquo;Hey Gooner&rdquo; anytime and Goonv answers your question.
+              Requires an OpenAI API key — without one, wake-word answers won&rsquo;t work.
+            </p>
           </div>
         </section>
       </main>
