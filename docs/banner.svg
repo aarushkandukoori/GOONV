@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08080c"/>
+      <stop offset="0.5" stop-color="#111118"/>
+      <stop offset="1" stop-color="#08080c"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="200" y1="100" x2="1080" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF4520" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FF6B35" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FF4520"/>
+      <stop offset="0.5" stop-color="#FF6B35"/>
+      <stop offset="1" stop-color="#FF8F5A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#E83A18"/>
+      <stop offset="1" stop-color="#FF5E3A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <ellipse cx="320" cy="180" rx="280" ry="200" fill="url(#glow)"/>
+  <ellipse cx="980" cy="480" rx="320" ry="220" fill="url(#glow)"/>
+  <g opacity="0.12">
+    <path d="M0 80H1280M0 160H1280M0 240H1280M0 320H1280M0 400H1280M0 480H1280M0 560H1280" stroke="#FF6B35"/>
+    <path d="M80 0V640M160 0V640M240 0V640M320 0V640M400 0V640M480 0V640M560 0V640M640 0V640M720 0V640M800 0V640M880 0V640M960 0V640M1040 0V640M1120 0V640M1200 0V640" stroke="#FF6B35"/>
+  </g>
+  <g transform="translate(120 190)">
+    <rect x="18" y="62" width="32" height="10" rx="5" fill="url(#bar)" transform="rotate(-42 34 67)"/>
+    <rect x="14" y="48" width="44" height="10" rx="5" fill="url(#bar)" transform="rotate(-42 36 53)"/>
+    <rect x="10" y="34" width="58" height="11" rx="5.5" fill="url(#bar)" transform="rotate(-42 39 39.5)"/>
+    <rect x="58" y="14" width="46" height="11" rx="5.5" fill="url(#accent)" transform="rotate(38 81 19.5)"/>
+  </g>
+  <text x="320" y="280" fill="#f2f2f7" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="96" font-weight="700" letter-spacing="-2">Goonv</text>
+  <text x="322" y="340" fill="#8e8e9a" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="32" font-weight="500">5th member of the goon squad · FaceTime AI</text>
+  <text x="322" y="400" fill="#FF7A52" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="28" font-weight="600">Say &quot;Hey Gooner&quot;  get answers on your call</text>
+  <rect x="322" y="440" width="220" height="52" rx="12" fill="#FF5C35"/>
+  <text x="432" y="474" fill="white" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Summon Goonv</text>
+</svg>
