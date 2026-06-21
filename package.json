@@ -1,6 +1,16 @@
 {
   "name": "goonv",
   "version": "1.0.0",
+  "description": "Goonv — the 5th member of the goon squad. AI voice assistant for FaceTime calls.",
+  "homepage": "https://aarushkandukoori.github.io/GOONV/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aarushkandukoori/GOONV.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aarushkandukoori/GOONV/issues"
+  },
+  "license": "MIT",
   "private": true,
   "type": "module",
   "scripts": {
