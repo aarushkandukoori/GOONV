@@ -2,7 +2,9 @@
 
 **Goonv** is the 5th member of the goon squad — an AI assistant that joins your FaceTime calls and answers questions when someone says **"Hey Gooner"**.
 
-## How it works (Koov-style auto-join)
+**Live app:** [https://aarushkandukoori.github.io/GOONV/](https://aarushkandukoori.github.io/GOONV/)
+
+## How it works
 
 Apple doesn't publish a FaceTime bot API, but products like [Koov](https://www.koovai.com/) join by automating the same surfaces humans use. Goonv does the same:
 
@@ -20,7 +22,7 @@ Then say **"Hey Gooner"** + your question.
 
 **Note:** Web joins may require the call host to **admit "Goonv"** — same as any browser FaceTime guest.
 
-## Quick start
+## Quick start (local dev with full auto-join)
 
 ```bash
 npm install
