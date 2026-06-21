@@ -237,6 +237,16 @@ export default function App() {
 
       <footer className="footer">
         <p>Goonv · goon squad · member #5</p>
+        <p className="footer-credit">
+          Made by{' '}
+          <a
+            href="https://github.com/aarushkandukoori"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Aarush Kandukoori
+          </a>
+        </p>
       </footer>
     </div>
   );

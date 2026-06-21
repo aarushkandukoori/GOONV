@@ -562,6 +562,19 @@ body {
   color: var(--text-muted);
 }
 
+.footer-credit {
+  margin-top: 6px;
+}
+
+.footer-credit a {
+  color: var(--accent-bright);
+  text-decoration: none;
+}
+
+.footer-credit a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 700px) {
   .features {
     grid-template-columns: 1fr;

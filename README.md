@@ -147,5 +147,7 @@ Issues and PRs welcome. Keep the goon squad energy high and the diffs focused.
   <br /><br />
   <strong>Goonv</strong> · goon squad · member #5
   <br />
+  Made by <a href="https://github.com/aarushkandukoori">Aarush Kandukoori</a>
+  <br />
   <a href="https://aarushkandukoori.github.io/GOONV/">aarushkandukoori.github.io/GOONV</a>
 </p>
